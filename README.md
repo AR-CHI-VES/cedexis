@@ -5,6 +5,8 @@
 
 ### Usage for platforms: Get platform code
 python citrix_itm_api.py -d platforms
+
+Result:
 {
     'id': 17653, 
     'name': 'CDNetworks SSL', 
@@ -23,6 +25,7 @@ python citrix_itm_api.py -d platforms
 
 ### Usage for countries: Get country code
 python citrix_itm_api.py -d countries
+
 Result:
   {
     "id": 223,
@@ -49,6 +52,7 @@ Result:
 ### Usage for radar
 # China, Top 10 ASN by smaple for MEAN
 python citrix_itm_api.py -d radar -r "networkId[limit:10;sort:measurements desc],mean" -c 44 
+
 Result:
 {
     u'facts': [[4134, 31], [4837, 42], [9808, 56], [56040, 49], [4808, 13], [4812, 17], [23724, 61], [4816, 40], [24445, 31], [24444, 23]], 
