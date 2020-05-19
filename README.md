@@ -5,8 +5,9 @@ Tested on Python 3.X.X
 Modules:
 
 
-## Usage for platforms: Get platform code
-python citrix_itm_api.py -d platforms
+## Usage
+### for platforms: Get platform code
+```python citrix_itm_api.py -d platforms
 
 Result:
 {
@@ -24,9 +25,9 @@ Result:
     'radarConfig': {'probeTypes': [{'id': 15}, {'id': 10}, {'id': 11}, {'id': 13}]}, 
     'geoConfig': None
 },
-
-## Usage for countries: Get country code
-python citrix_itm_api.py -d countries
+```
+### for countries: Get country code
+```python citrix_itm_api.py -d countries
 
 Result:
   {
@@ -50,10 +51,9 @@ Result:
       "name": "North America"
     }
   }, ...
-
-## Usage for radar
-### China, Top 10 ASN by smaple for MEAN
-python citrix_itm_api.py -d radar -r "networkId[limit:10;sort:measurements desc],mean" -c 44 
+```
+### for radar e.g. China, Top 10 ASN by smaple for MEAN
+```python citrix_itm_api.py -d radar -r "networkId[limit:10;sort:measurements desc],mean" -c 44 
 
 Result:
 {
@@ -86,10 +86,10 @@ Result:
 Field: 
  - data = ['facts']
  - column = ['columns']
-
+```
 ### Top 10 country for Top 10 ASN by sample for MEAN
-python citrix_itm_api.py -d radar -r "countryId[limit:10;sort:measurements desc],networkId[limit:10;sort:measurements desc],mean" 
-"""
+```python citrix_itm_api.py -d radar -r "countryId[limit:10;sort:measurements desc],networkId[limit:10;sort:measurements desc],mean" 
+```
 
 ## Parameters
 | Param | Type | Description |
